@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { FlatList, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { names } from "./name";
+import { names } from "./names";
 
 export default function App() {
 
@@ -9,9 +9,9 @@ export default function App() {
   });
   
   
-  const renderName = ({ item }) => {
+  function renderName({ item }) {
     return <Text>{item.name}</Text>;
-  };
+  }
 
   return (
   <FlatList
